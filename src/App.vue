@@ -1,12 +1,19 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,500,700,400italic|Material+Icons">
+  <Header/>
   </div>
 </template>
+<script lang="js">
+import Header from './components/Header.vue';
+export default {
+  name: 'App',
+  components: {
+     Header
+  }
+}
+
+</script>
 
 <style>
 #app {
